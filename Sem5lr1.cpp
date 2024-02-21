@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-
+//комментарий
 class Array
 {
 public:
