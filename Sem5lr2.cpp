@@ -17,6 +17,11 @@ public:
             std::cin >> arrdef[i];
     }
 
+    ~Array() // Деструктор для освобождения памяти
+    {
+        delete[] arrdef;
+    }
+
     void summary(int helpc);
 
     void divide(int helpc);
@@ -226,14 +231,4 @@ void Array::tosort()
 
     std::cout << "sort up Array" << num << "= ";
 
-    for (int i = 0; i < sizearrdef; i++)
-        std::cout << help[i] << " ";
-
-    std::cout << std::endl << "sort down Array" << num << "= ";
-
-    for (int i = sizearrdef - 1; i >= 0; i--)
-        std::cout << help[i] << " ";
-
-    std::cout << std::endl;
-
-}
+    for (int i = 0; i < sizearrdef; i
